@@ -25,10 +25,10 @@
   * { margin: 0; padding: 0; box-sizing: border-box; } html { scroll-behavior: smooth; }
   body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--dark); overflow-x: hidden; }
   nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1.2rem 2rem; display: flex; justify-content: space-between; align-items: center; background: rgba(253,250,244,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(26,107,138,0.1); }
-  .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--ocean); text-decoration: none; }
+  .sd-nav-logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--ocean); text-decoration: none; }
   .nav-logo span { color: var(--sunset); }
-  .nav-links { display: flex; gap: 2rem; list-style: none; }
-  .nav-links a { font-size: 0.875rem; font-weight: 500; color: var(--mid); text-decoration: none; }
+  .sd-nav-links { display: flex; gap: 2rem; list-style: none; }
+  .sd-nav-links a { font-size: 0.875rem; font-weight: 500; color: var(--mid); text-decoration: none; }
   .cat-hero { padding: 8rem 0 4rem; background: linear-gradient(135deg, #1D9E75 0%, #04342C 100%); text-align: center; color: var(--white); position: relative; overflow: hidden; z-index: 1; }
   .hero-inner { position: relative; max-width: 800px; margin: 0 auto; padding: 0 2rem; }
   .breadcrumb { display: flex; justify-content: center; gap: 0.5rem; font-size: 0.8rem; opacity: 0.7; margin-bottom: 1.5rem; }
@@ -46,7 +46,7 @@
   .pick-icon { font-size: 2rem; margin-bottom: 0.75rem; display: block; }
   .pick-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.4rem; }
   .pick-age { font-size: 0.75rem; color: var(--cat); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.5rem; }
-  .pick-desc { font-size: 0.875rem; color: var(--mid); line-height: 1.6; }
+  .pick-item-desc { font-size: 0.875rem; color: var(--mid); line-height: 1.6; }
   .faq-section { background: var(--dark); border-radius: 20px; padding: 3rem; margin: 3rem 0; }
   .faq-title { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; margin-bottom: 2rem; color: var(--white); }
   .faq-item { border-bottom: 1px solid rgba(255,255,255,0.1); padding: 1.25rem 0; }
@@ -60,11 +60,11 @@
   footer { background: var(--dark); color: rgba(255,255,255,0.4); padding: 2rem 5rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; }
   .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--white); text-decoration: none; }
   .footer-logo span { color: var(--sunset); }
-  @media (max-width: 768px) { nav { padding: 1rem 1.5rem; } .nav-links { display: none; } .page-body { padding: 2rem 1.5rem; } .picks-grid { grid-template-columns: 1fr; } footer { padding: 2rem 1.5rem; flex-direction: column; gap: 0.5rem; text-align: center; } }
+  @media (max-width: 768px) { nav { padding: 1rem 1.5rem; } .sd-nav-links { display: none; } .page-body { padding: 2rem 1.5rem; } .picks-grid { grid-template-columns: 1fr; } footer { padding: 2rem 1.5rem; flex-direction: column; gap: 0.5rem; text-align: center; } }
 .cat-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}.cat-hero{position:relative;}.hero-inner{position:relative;z-index:2;}</style>
 </head>
 <body>
-<nav><a href="index.html" class="nav-logo">San Diego<span>Todo</span></a><ul class="nav-links"><li><a href="index.html#categories">Explore</a></li><li><a href="index.html#neighborhoods">Neighborhoods</a></li><li><a href="index.html#top-picks">Top Picks</a></li></ul></nav>
+<nav><a href="index.html" class="sd-nav-logo">San Diego<span>Todo</span></a><ul class="sd-nav-links"><li><a href="index.html#categories">Explore</a></li><li><a href="index.html#neighborhoods">Neighborhoods</a></li><li><a href="index.html#top-picks">Top Picks</a></li></ul></nav>
 <header class="cat-hero"><img class="cat-hero-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1400&q=80&auto=format&fit=crop" alt="San Diego family fun kids activities beaches" loading="eager">
   <div class="hero-inner">
     <nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Family Fun</span></nav>
@@ -78,14 +78,14 @@
   <div class="section-label">Top family attractions</div>
   <h2 class="section-title">Best activities for families in San Diego</h2>
   <div class="picks-grid">
-    <div class="pick-card"><span class="pick-icon">🦁</span><div class="pick-age">All ages</div><div class="pick-title">San Diego Zoo</div><div class="pick-desc">One of the world's best zoos — 3,500 animals, 100 acres, and exhibits that put animals in immersive natural habitats. Plan a full day. The Skyfari aerial tram gives great views across the park.</div></div>
-    <div class="pick-card"><span class="pick-icon">🌊</span><div class="pick-age">All ages</div><div class="pick-title">SeaWorld San Diego</div><div class="pick-desc">Marine life shows, dolphin encounters, roller coasters, and the best orca experience in California. The Penguin Encounter and shark exhibit are standouts. Full day activity.</div></div>
-    <div class="pick-card"><span class="pick-icon">🧱</span><div class="pick-age">Ages 2–12</div><div class="pick-title">Legoland California</div><div class="pick-desc">30 miles north in Carlsbad — an entire theme park built for younger children. Miniland USA (US landmarks in Lego) is extraordinary. The water park add-on is excellent in summer.</div></div>
-    <div class="pick-card"><span class="pick-icon">🏖️</span><div class="pick-age">All ages</div><div class="pick-title">La Jolla Shores</div><div class="pick-desc">San Diego's best family beach — calm waves, wide sandy shore, lifeguards on duty, grassy picnic area with BBQ grills. Rentals for kayaks and paddleboards available on the beach.</div></div>
-    <div class="pick-card"><span class="pick-icon">🔬</span><div class="pick-age">Ages 5+</div><div class="pick-title">Fleet Science Center</div><div class="pick-desc">Hands-on science museum in Balboa Park with interactive exhibits and an IMAX theater. The Tinkering Studio lets kids build and experiment. One of the best children's museums in California.</div></div>
-    <div class="pick-card"><span class="pick-icon">🚢</span><div class="pick-age">Ages 6+</div><div class="pick-title">USS Midway Museum</div><div class="pick-desc">Explore one of the world's largest naval museums — an actual aircraft carrier docked on the harbor. Kids can sit in cockpits, tour the ship, and watch flight simulators. Genuinely exciting for all ages.</div></div>
-    <div class="pick-card"><span class="pick-icon">🦈</span><div class="pick-age">All ages</div><div class="pick-title">Birch Aquarium at Scripps</div><div class="pick-desc">World-class oceanographic aquarium in La Jolla run by Scripps Institution of Oceanography. The kelp forest tank, seahorse exhibit, and touch tide pools are highlights. Reasonable admission, outstanding quality.</div></div>
-    <div class="pick-card"><span class="pick-icon">🎡</span><div class="pick-age">All ages</div><div class="pick-title">Belmont Park</div><div class="pick-desc">Historic amusement park on Mission Beach — the classic Giant Dipper wooden roller coaster has been running since 1925. Arcade, mini golf, and beach access right next door. Perfect for a half-day visit.</div></div>
+    <div class="pick-card"><span class="pick-icon">🦁</span><div class="pick-age">All ages</div><div class="pick-title">San Diego Zoo</div><div class="pick-item-desc">One of the world's best zoos — 3,500 animals, 100 acres, and exhibits that put animals in immersive natural habitats. Plan a full day. The Skyfari aerial tram gives great views across the park.</div></div>
+    <div class="pick-card"><span class="pick-icon">🌊</span><div class="pick-age">All ages</div><div class="pick-title">SeaWorld San Diego</div><div class="pick-item-desc">Marine life shows, dolphin encounters, roller coasters, and the best orca experience in California. The Penguin Encounter and shark exhibit are standouts. Full day activity.</div></div>
+    <div class="pick-card"><span class="pick-icon">🧱</span><div class="pick-age">Ages 2–12</div><div class="pick-title">Legoland California</div><div class="pick-item-desc">30 miles north in Carlsbad — an entire theme park built for younger children. Miniland USA (US landmarks in Lego) is extraordinary. The water park add-on is excellent in summer.</div></div>
+    <div class="pick-card"><span class="pick-icon">🏖️</span><div class="pick-age">All ages</div><div class="pick-title">La Jolla Shores</div><div class="pick-item-desc">San Diego's best family beach — calm waves, wide sandy shore, lifeguards on duty, grassy picnic area with BBQ grills. Rentals for kayaks and paddleboards available on the beach.</div></div>
+    <div class="pick-card"><span class="pick-icon">🔬</span><div class="pick-age">Ages 5+</div><div class="pick-title">Fleet Science Center</div><div class="pick-item-desc">Hands-on science museum in Balboa Park with interactive exhibits and an IMAX theater. The Tinkering Studio lets kids build and experiment. One of the best children's museums in California.</div></div>
+    <div class="pick-card"><span class="pick-icon">🚢</span><div class="pick-age">Ages 6+</div><div class="pick-title">USS Midway Museum</div><div class="pick-item-desc">Explore one of the world's largest naval museums — an actual aircraft carrier docked on the harbor. Kids can sit in cockpits, tour the ship, and watch flight simulators. Genuinely exciting for all ages.</div></div>
+    <div class="pick-card"><span class="pick-icon">🦈</span><div class="pick-age">All ages</div><div class="pick-title">Birch Aquarium at Scripps</div><div class="pick-item-desc">World-class oceanographic aquarium in La Jolla run by Scripps Institution of Oceanography. The kelp forest tank, seahorse exhibit, and touch tide pools are highlights. Reasonable admission, outstanding quality.</div></div>
+    <div class="pick-card"><span class="pick-icon">🎡</span><div class="pick-age">All ages</div><div class="pick-title">Belmont Park</div><div class="pick-item-desc">Historic amusement park on Mission Beach — the classic Giant Dipper wooden roller coaster has been running since 1925. Arcade, mini golf, and beach access right next door. Perfect for a half-day visit.</div></div>
   </div>
   <div class="faq-section">
     <h2 class="faq-title">San Diego family FAQs</h2>

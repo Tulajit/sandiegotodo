@@ -187,7 +187,7 @@
     border-bottom: 1px solid rgba(26,107,138,0.1);
   }
 
-  .nav-logo {
+  .sd-nav-logo {
     font-family: 'Playfair Display', serif;
     font-size: 1.3rem;
     font-weight: 700;
@@ -197,13 +197,13 @@
 
   .nav-logo span { color: var(--sunset); }
 
-  .nav-links {
+  .sd-nav-links {
     display: flex;
     gap: 2rem;
     list-style: none;
   }
 
-  .nav-links a {
+  .sd-nav-links a {
     font-size: 0.875rem;
     font-weight: 500;
     color: var(--mid);
@@ -211,7 +211,7 @@
     transition: color 0.2s;
   }
 
-  .nav-links a:hover { color: var(--ocean); }
+  .sd-nav-links a:hover { color: var(--ocean); }
 
   /* HERO */
   .article-hero {
@@ -589,7 +589,7 @@
 
   @media (max-width: 768px) {
     nav { padding: 1rem 1.5rem; }
-    .nav-links { display: none; }
+    .sd-nav-links { display: none; }
     .article-body { padding: 2rem 1.5rem; }
     .toc-list { grid-template-columns: 1fr; }
     .beach-details { grid-template-columns: 1fr 1fr; }
@@ -600,8 +600,8 @@
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo">San Diego<span>Todo</span></a>
-  <ul class="nav-links">
+  <a href="index.html" class="sd-nav-logo">San Diego<span>Todo</span></a>
+  <ul class="sd-nav-links">
     <li><a href="index.html#categories">Explore</a></li>
     <li><a href="index.html#neighborhoods">Neighborhoods</a></li>
     <li><a href="index.html#top-picks">Top Picks</a></li>

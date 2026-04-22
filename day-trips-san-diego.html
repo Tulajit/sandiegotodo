@@ -25,10 +25,10 @@
   * { margin: 0; padding: 0; box-sizing: border-box; } html { scroll-behavior: smooth; }
   body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--dark); overflow-x: hidden; }
   nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1.2rem 2rem; display: flex; justify-content: space-between; align-items: center; background: rgba(253,250,244,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(26,107,138,0.1); }
-  .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--ocean); text-decoration: none; }
+  .sd-nav-logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--ocean); text-decoration: none; }
   .nav-logo span { color: var(--sunset); }
-  .nav-links { display: flex; gap: 2rem; list-style: none; }
-  .nav-links a { font-size: 0.875rem; font-weight: 500; color: var(--mid); text-decoration: none; }
+  .sd-nav-links { display: flex; gap: 2rem; list-style: none; }
+  .sd-nav-links a { font-size: 0.875rem; font-weight: 500; color: var(--mid); text-decoration: none; }
   .cat-hero { padding: 8rem 0 4rem; background: linear-gradient(135deg, #5F5E5A 0%, #2C2C2A 100%); text-align: center; color: var(--white); position: relative; overflow: hidden; z-index: 1; }
   .cat-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 20% 80%, rgba(232,98,42,0.2) 0%, transparent 50%); }
   .hero-inner { position: relative; max-width: 800px; margin: 0 auto; padding: 0 2rem; }
@@ -66,11 +66,11 @@
   footer { background: var(--dark); color: rgba(255,255,255,0.4); padding: 2rem 5rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; }
   .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--white); text-decoration: none; }
   .footer-logo span { color: var(--sunset); }
-  @media (max-width: 768px) { nav { padding: 1rem 1.5rem; } .nav-links { display: none; } .page-body { padding: 2rem 1.5rem; } .trip-item { grid-template-columns: 60px 1fr; } .trip-badge { display: none; } footer { padding: 2rem 1.5rem; flex-direction: column; gap: 0.5rem; text-align: center; } }
+  @media (max-width: 768px) { nav { padding: 1rem 1.5rem; } .sd-nav-links { display: none; } .page-body { padding: 2rem 1.5rem; } .trip-item { grid-template-columns: 60px 1fr; } .trip-badge { display: none; } footer { padding: 2rem 1.5rem; flex-direction: column; gap: 0.5rem; text-align: center; } }
 .cat-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}.cat-hero{position:relative;}.hero-inner{position:relative;z-index:2;}</style>
 </head>
 <body>
-<nav><a href="index.html" class="nav-logo">San Diego<span>Todo</span></a><ul class="nav-links"><li><a href="index.html#categories">Explore</a></li><li><a href="index.html#neighborhoods">Neighborhoods</a></li><li><a href="index.html#top-picks">Top Picks</a></li></ul></nav>
+<nav><a href="index.html" class="sd-nav-logo">San Diego<span>Todo</span></a><ul class="sd-nav-links"><li><a href="index.html#categories">Explore</a></li><li><a href="index.html#neighborhoods">Neighborhoods</a></li><li><a href="index.html#top-picks">Top Picks</a></li></ul></nav>
 <header class="cat-hero"><img class="cat-hero-img" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1400&q=80&auto=format&fit=crop" alt="Day trips from San Diego desert California road trip" loading="eager">
   <div class="hero-inner">
     <nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Day Trips</span></nav>

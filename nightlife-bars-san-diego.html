@@ -25,10 +25,10 @@
   * { margin: 0; padding: 0; box-sizing: border-box; } html { scroll-behavior: smooth; }
   body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--dark); overflow-x: hidden; }
   nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1.2rem 2rem; display: flex; justify-content: space-between; align-items: center; background: rgba(253,250,244,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(26,107,138,0.1); }
-  .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--ocean); text-decoration: none; }
+  .sd-nav-logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--ocean); text-decoration: none; }
   .nav-logo span { color: var(--sunset); }
-  .nav-links { display: flex; gap: 2rem; list-style: none; }
-  .nav-links a { font-size: 0.875rem; font-weight: 500; color: var(--mid); text-decoration: none; }
+  .sd-nav-links { display: flex; gap: 2rem; list-style: none; }
+  .sd-nav-links a { font-size: 0.875rem; font-weight: 500; color: var(--mid); text-decoration: none; }
   .cat-hero { padding: 8rem 0 4rem; background: linear-gradient(135deg, #534AB7 0%, #26215C 100%); text-align: center; color: var(--white); position: relative; overflow: hidden; z-index: 1; }
   .hero-inner { position: relative; max-width: 800px; margin: 0 auto; padding: 0 2rem; }
   .breadcrumb { display: flex; justify-content: center; gap: 0.5rem; font-size: 0.8rem; opacity: 0.7; margin-bottom: 1.5rem; }
@@ -46,7 +46,7 @@
   .pick-icon { font-size: 2rem; margin-bottom: 0.75rem; display: block; }
   .pick-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.4rem; }
   .pick-type { font-size: 0.75rem; color: var(--cat); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.5rem; }
-  .pick-desc { font-size: 0.875rem; color: var(--mid); line-height: 1.6; }
+  .pick-item-desc { font-size: 0.875rem; color: var(--mid); line-height: 1.6; }
   .faq-section { background: var(--dark); border-radius: 20px; padding: 3rem; margin: 3rem 0; }
   .faq-title { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; margin-bottom: 2rem; color: var(--white); }
   .faq-item { border-bottom: 1px solid rgba(255,255,255,0.1); padding: 1.25rem 0; }
@@ -60,11 +60,11 @@
   footer { background: var(--dark); color: rgba(255,255,255,0.4); padding: 2rem 5rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; }
   .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--white); text-decoration: none; }
   .footer-logo span { color: var(--sunset); }
-  @media (max-width: 768px) { nav { padding: 1rem 1.5rem; } .nav-links { display: none; } .page-body { padding: 2rem 1.5rem; } .picks-grid { grid-template-columns: 1fr; } footer { padding: 2rem 1.5rem; flex-direction: column; gap: 0.5rem; text-align: center; } }
+  @media (max-width: 768px) { nav { padding: 1rem 1.5rem; } .sd-nav-links { display: none; } .page-body { padding: 2rem 1.5rem; } .picks-grid { grid-template-columns: 1fr; } footer { padding: 2rem 1.5rem; flex-direction: column; gap: 0.5rem; text-align: center; } }
 .cat-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}.cat-hero{position:relative;}.hero-inner{position:relative;z-index:2;}</style>
 </head>
 <body>
-<nav><a href="index.html" class="nav-logo">San Diego<span>Todo</span></a><ul class="nav-links"><li><a href="index.html#categories">Explore</a></li><li><a href="index.html#neighborhoods">Neighborhoods</a></li><li><a href="index.html#top-picks">Top Picks</a></li></ul></nav>
+<nav><a href="index.html" class="sd-nav-logo">San Diego<span>Todo</span></a><ul class="sd-nav-links"><li><a href="index.html#categories">Explore</a></li><li><a href="index.html#neighborhoods">Neighborhoods</a></li><li><a href="index.html#top-picks">Top Picks</a></li></ul></nav>
 <header class="cat-hero"><img class="cat-hero-img" src="https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?w=1400&q=80&auto=format&fit=crop" alt="San Diego nightlife bars cocktails Gaslamp Quarter" loading="eager">
   <div class="hero-inner">
     <nav class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Nightlife & Bars</span></nav>
@@ -78,12 +78,12 @@
   <div class="section-label">Best bars by type</div>
   <h2 class="section-title">San Diego's nightlife scene</h2>
   <div class="picks-grid">
-    <div class="pick-card"><span class="pick-icon">🌆</span><div class="pick-type">Rooftop Bars</div><div class="pick-title">Best rooftop bars</div><div class="pick-desc">Altitude Sky Lounge (22 floors, Gaslamp), Raised by Wolves (Little Italy), Coco Maya (Little Italy), The Rooftop at Pendry (Gaslamp). Year-round mild weather makes rooftop drinking a San Diego staple.</div></div>
-    <div class="pick-card"><span class="pick-icon">🍸</span><div class="pick-type">Craft Cocktails</div><div class="pick-title">Best cocktail bars</div><div class="pick-desc">Noble Experiment (hidden speakeasy, Gaslamp), Polite Provisions (North Park), False Idol (tiki bar, Little Italy), The Grass Skirt (hidden tiki bar, Pacific Beach). San Diego's cocktail scene is genuinely world-class.</div></div>
-    <div class="pick-card"><span class="pick-icon">🎵</span><div class="pick-type">Live Music</div><div class="pick-title">Best live music venues</div><div class="pick-desc">The Observatory North Park, House of Blues (Gaslamp), Casbah (Middletown), SOMA (Mission Valley). San Diego has a surprisingly rich live music scene across rock, indie, jazz, and electronic genres.</div></div>
-    <div class="pick-card"><span class="pick-icon">🏖️</span><div class="pick-type">Beach Bars</div><div class="pick-title">Best beach bars</div><div class="pick-desc">South Beach Bar & Grille (OB), PB Shore Club (Pacific Beach), Cass Street Bar & Grill (PB), The Pennant (Mission Beach). Nothing beats a cold beer with your feet in the sand.</div></div>
-    <div class="pick-card"><span class="pick-icon">🍺</span><div class="pick-type">Craft Beer</div><div class="pick-title">Best brewery taprooms</div><div class="pick-desc">Stone Brewing World Bistro (Liberty Station), Modern Times (North Park), Mike Hess Brewing (North Park), Karl Strauss (multiple). San Diego is one of the world's great craft beer cities with 150+ breweries.</div></div>
-    <div class="pick-card"><span class="pick-icon">🕺</span><div class="pick-type">Clubs & Dancing</div><div class="pick-title">Best clubs for dancing</div><div class="pick-desc">Omnia (Gaslamp, world-class EDM venue), Bang Bang (Gaslamp, hip-hop and electronic), Parq (Gaslamp, multiple rooms), FLUXX (Gaslamp). The Gaslamp Quarter is the center of San Diego's club scene.</div></div>
+    <div class="pick-card"><span class="pick-icon">🌆</span><div class="pick-type">Rooftop Bars</div><div class="pick-title">Best rooftop bars</div><div class="pick-item-desc">Altitude Sky Lounge (22 floors, Gaslamp), Raised by Wolves (Little Italy), Coco Maya (Little Italy), The Rooftop at Pendry (Gaslamp). Year-round mild weather makes rooftop drinking a San Diego staple.</div></div>
+    <div class="pick-card"><span class="pick-icon">🍸</span><div class="pick-type">Craft Cocktails</div><div class="pick-title">Best cocktail bars</div><div class="pick-item-desc">Noble Experiment (hidden speakeasy, Gaslamp), Polite Provisions (North Park), False Idol (tiki bar, Little Italy), The Grass Skirt (hidden tiki bar, Pacific Beach). San Diego's cocktail scene is genuinely world-class.</div></div>
+    <div class="pick-card"><span class="pick-icon">🎵</span><div class="pick-type">Live Music</div><div class="pick-title">Best live music venues</div><div class="pick-item-desc">The Observatory North Park, House of Blues (Gaslamp), Casbah (Middletown), SOMA (Mission Valley). San Diego has a surprisingly rich live music scene across rock, indie, jazz, and electronic genres.</div></div>
+    <div class="pick-card"><span class="pick-icon">🏖️</span><div class="pick-type">Beach Bars</div><div class="pick-title">Best beach bars</div><div class="pick-item-desc">South Beach Bar & Grille (OB), PB Shore Club (Pacific Beach), Cass Street Bar & Grill (PB), The Pennant (Mission Beach). Nothing beats a cold beer with your feet in the sand.</div></div>
+    <div class="pick-card"><span class="pick-icon">🍺</span><div class="pick-type">Craft Beer</div><div class="pick-title">Best brewery taprooms</div><div class="pick-item-desc">Stone Brewing World Bistro (Liberty Station), Modern Times (North Park), Mike Hess Brewing (North Park), Karl Strauss (multiple). San Diego is one of the world's great craft beer cities with 150+ breweries.</div></div>
+    <div class="pick-card"><span class="pick-icon">🕺</span><div class="pick-type">Clubs & Dancing</div><div class="pick-title">Best clubs for dancing</div><div class="pick-item-desc">Omnia (Gaslamp, world-class EDM venue), Bang Bang (Gaslamp, hip-hop and electronic), Parq (Gaslamp, multiple rooms), FLUXX (Gaslamp). The Gaslamp Quarter is the center of San Diego's club scene.</div></div>
   </div>
   <div class="faq-section">
     <h2 class="faq-title">San Diego nightlife FAQs</h2>

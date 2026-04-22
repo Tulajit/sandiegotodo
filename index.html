@@ -58,7 +58,7 @@
     border-bottom: 1px solid rgba(26,107,138,0.1);
   }
 
-  .nav-logo {
+  .sd-nav-logo {
     font-family: 'Playfair Display', serif;
     font-size: 1.3rem;
     font-weight: 700;
@@ -69,13 +69,13 @@
 
   .nav-logo span { color: var(--sunset); }
 
-  .nav-links {
+  .sd-nav-links {
     display: flex;
     gap: 2rem;
     list-style: none;
   }
 
-  .nav-links a {
+  .sd-nav-links a {
     font-size: 0.875rem;
     font-weight: 500;
     color: var(--mid);
@@ -84,7 +84,7 @@
     transition: color 0.2s;
   }
 
-  .nav-links a:hover { color: var(--ocean); }
+  .sd-nav-links a:hover { color: var(--ocean); }
 
   /* HERO */
   .hero {
@@ -155,7 +155,7 @@
     flex-wrap: wrap;
   }
 
-  .btn-primary {
+  .sd-btn-primary {
     background: var(--ocean);
     color: var(--white);
     padding: 0.85rem 2rem;
@@ -167,7 +167,7 @@
     letter-spacing: 0.01em;
   }
 
-  .btn-primary:hover {
+  .sd-btn-primary:hover {
     background: var(--dark);
     transform: translateY(-2px);
   }
@@ -308,7 +308,7 @@
     line-height: 1.2;
   }
 
-  .see-all {
+  .sd-see-all {
     font-size: 0.875rem;
     font-weight: 500;
     color: var(--ocean);
@@ -319,7 +319,7 @@
     white-space: nowrap;
   }
 
-  .see-all:hover { gap: 0.6rem; }
+  .sd-see-all:hover { gap: 0.6rem; }
 
   .cat-grid {
     display: grid;
@@ -376,7 +376,7 @@
   }
 
   /* FEATURED */
-  .featured {
+  .sd-featured {
     padding: 2rem 5rem 6rem;
     background: var(--cream);
   }
@@ -554,7 +554,7 @@
   }
 
   /* TOP PICKS */
-  .top-picks {
+  .sd-top-picks {
     padding: 6rem 5rem;
     background: var(--sand);
   }
@@ -583,7 +583,7 @@
 
   .pick-item:hover { background: rgba(26,107,138,0.04); }
 
-  .pick-num {
+  .pick-item-num {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
     font-weight: 900;
@@ -591,14 +591,14 @@
     text-align: center;
   }
 
-  .pick-name {
+  .pick-item-name {
     font-family: 'Playfair Display', serif;
     font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 0.25rem;
   }
 
-  .pick-desc {
+  .pick-item-desc {
     font-size: 0.83rem;
     color: var(--mid);
   }
@@ -616,7 +616,7 @@
   .badge-family { background: rgba(26,107,138,0.1); color: var(--ocean); }
 
   /* NEWSLETTER */
-  .newsletter {
+  .email-band {
     background: var(--ocean);
     padding: 5rem;
     display: grid;
@@ -625,7 +625,7 @@
     align-items: center;
   }
 
-  .nl-title {
+  .band-title {
     font-family: 'Playfair Display', serif;
     font-size: clamp(1.8rem, 3vw, 2.5rem);
     font-weight: 700;
@@ -634,18 +634,18 @@
     margin-bottom: 1rem;
   }
 
-  .nl-sub {
+  .band-sub {
     font-size: 0.95rem;
     color: rgba(255,255,255,0.7);
     line-height: 1.6;
   }
 
-  .nl-form {
+  .band-form {
     display: flex;
     gap: 0.75rem;
   }
 
-  .nl-input {
+  .band-input {
     flex: 1;
     padding: 0.9rem 1.25rem;
     border-radius: 100px;
@@ -658,10 +658,10 @@
     transition: background 0.2s;
   }
 
-  .nl-input::placeholder { color: rgba(255,255,255,0.5); }
-  .nl-input:focus { background: rgba(255,255,255,0.22); }
+  .band-input::placeholder { color: rgba(255,255,255,0.5); }
+  .band-input:focus { background: rgba(255,255,255,0.22); }
 
-  .nl-btn {
+  .band-btn {
     background: var(--sunset);
     color: var(--white);
     border: none;
@@ -675,7 +675,7 @@
     white-space: nowrap;
   }
 
-  .nl-btn:hover {
+  .band-btn:hover {
     background: #d4521e;
     transform: translateY(-2px);
   }
@@ -736,7 +736,7 @@
 
   .footer-links a:hover { color: var(--white); }
 
-  .footer-bottom {
+  .footer-bar {
     border-top: 1px solid rgba(255,255,255,0.08);
     padding-top: 1.5rem;
     display: flex;
@@ -765,7 +765,7 @@
   /* MOBILE */
   @media (max-width: 768px) {
     nav { padding: 1rem 1.5rem; }
-    .nav-links { display: none; }
+    .sd-nav-links { display: none; }
 
     .hero {
       grid-template-columns: 1fr;
@@ -780,7 +780,7 @@
       height: 300px;
     }
 
-    .categories, .featured, .top-picks, .newsletter { padding: 4rem 1.5rem; }
+    .categories, .featured, .top-picks, .email-band { padding: 4rem 1.5rem; }
     .neighborhoods { padding: 4rem 1.5rem; }
     footer { padding: 3rem 1.5rem 1.5rem; }
 
@@ -788,8 +788,8 @@
     .featured-grid { grid-template-columns: 1fr; }
     .hood-grid { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: 1fr 1fr; }
-    .newsletter { grid-template-columns: 1fr; gap: 2rem; }
-    .nl-form { flex-direction: column; }
+    .email-band { grid-template-columns: 1fr; gap: 2rem; }
+    .band-form { flex-direction: column; }
     .section-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
     .pick-item { grid-template-columns: 40px 1fr; }
     .pick-badge { display: none; }
@@ -836,8 +836,8 @@
 <body>
 
 <nav>
-  <a href="/" class="nav-logo">San Diego<span>Todo</span></a>
-  <ul class="nav-links">
+  <a href="/" class="sd-nav-logo">San Diego<span>Todo</span></a>
+  <ul class="sd-nav-links">
     <li><a href="#categories">Explore</a></li>
     <li><a href="#neighborhoods">Neighborhoods</a></li>
     <li><a href="#top-picks">Top Picks</a></li>
@@ -852,7 +852,7 @@
     <h1>Your next<br><em>adventure</em><br>starts here.</h1>
     <p class="hero-sub">From hidden beach coves to rooftop bars, world-class tacos to sunrise hikes — we know San Diego better than your GPS.</p>
     <div class="hero-cta">
-      <a href="#categories" class="btn-primary">Start Exploring</a>
+      <a href="#categories" class="sd-btn-primary">Start Exploring</a>
       <a href="#top-picks" class="btn-secondary">Top Picks</a>
     </div>
   </div>
@@ -888,7 +888,7 @@
       <div class="section-label">Browse by type</div>
       <h2 class="section-title">What are you<br>in the mood for?</h2>
     </div>
-    <a href="beaches-water-san-diego.html" class="see-all">View all →</a>
+    <a href="beaches-water-san-diego.html" class="sd-see-all">View all →</a>
   </div>
   <div class="cat-grid">
     <a href="beaches-water-san-diego.html" class="cat-card">
@@ -935,13 +935,13 @@
 </section>
 
 <!-- FEATURED -->
-<section class="featured">
+<section class="sd-featured">
   <div class="section-header">
     <div>
       <div class="section-label">Editor's picks</div>
       <h2 class="section-title">Featured this week</h2>
     </div>
-    <a href="food-dining-san-diego.html" class="see-all">All articles →</a>
+    <a href="food-dining-san-diego.html" class="sd-see-all">All articles →</a>
   </div>
   <div class="featured-grid">
     <a href="best-beaches-san-diego.html" class="feat-card feat-card-large">
@@ -1023,7 +1023,7 @@
 </section>
 
 <!-- TOP PICKS -->
-<section class="top-picks" id="top-picks">
+<section class="sd-top-picks" id="top-picks">
   <div class="section-header">
     <div>
       <div class="section-label">Can't miss</div>
@@ -1032,82 +1032,82 @@
   </div>
   <div class="picks-list">
     <a href="balboa-park-san-diego.html" class="pick-item">
-      <div class="pick-num">01</div>
+      <div class="pick-item-num">01</div>
       <div>
-        <div class="pick-name">San Diego Zoo</div>
-        <div class="pick-desc">One of the world's best zoos — 3,500 animals across 100 acres in Balboa Park</div>
+        <div class="pick-item-name">San Diego Zoo</div>
+        <div class="pick-item-desc">One of the world's best zoos — 3,500 animals across 100 acres in Balboa Park</div>
       </div>
       <span class="pick-badge badge-paid">Paid</span>
     </a>
     <a href="best-beaches-san-diego.html#la-jolla-cove" class="pick-item">
-      <div class="pick-num">02</div>
+      <div class="pick-item-num">02</div>
       <div>
-        <div class="pick-name">La Jolla Cove</div>
-        <div class="pick-desc">Snorkel with leopard sharks, watch sea lions, and swim in crystal-clear water</div>
+        <div class="pick-item-name">La Jolla Cove</div>
+        <div class="pick-item-desc">Snorkel with leopard sharks, watch sea lions, and swim in crystal-clear water</div>
       </div>
       <span class="pick-badge badge-free">Free</span>
     </a>
     <a href="balboa-park-san-diego.html" class="pick-item">
-      <div class="pick-num">03</div>
+      <div class="pick-item-num">03</div>
       <div>
-        <div class="pick-name">Balboa Park</div>
-        <div class="pick-desc">15 museums, stunning gardens, and the best people-watching in San Diego</div>
+        <div class="pick-item-name">Balboa Park</div>
+        <div class="pick-item-desc">15 museums, stunning gardens, and the best people-watching in San Diego</div>
       </div>
       <span class="pick-badge badge-free">Free</span>
     </a>
     <a href="arts-culture-san-diego.html" class="pick-item">
-      <div class="pick-num">04</div>
+      <div class="pick-item-num">04</div>
       <div>
-        <div class="pick-name">USS Midway Museum</div>
-        <div class="pick-desc">Tour the largest naval museum in the world, docked right on the harbor</div>
+        <div class="pick-item-name">USS Midway Museum</div>
+        <div class="pick-item-desc">Tour the largest naval museum in the world, docked right on the harbor</div>
       </div>
       <span class="pick-badge badge-paid">Paid</span>
     </a>
     <a href="best-hikes-san-diego.html#torrey-pines" class="pick-item">
-      <div class="pick-num">05</div>
+      <div class="pick-item-num">05</div>
       <div>
-        <div class="pick-name">Torrey Pines State Reserve</div>
-        <div class="pick-desc">Clifftop hiking with jaw-dropping Pacific views — just 20 mins from downtown</div>
+        <div class="pick-item-name">Torrey Pines State Reserve</div>
+        <div class="pick-item-desc">Clifftop hiking with jaw-dropping Pacific views — just 20 mins from downtown</div>
       </div>
       <span class="pick-badge badge-free">Free</span>
     </a>
     <a href="gaslamp-quarter-san-diego.html" class="pick-item">
-      <div class="pick-num">06</div>
+      <div class="pick-item-num">06</div>
       <div>
-        <div class="pick-name">Gaslamp Quarter</div>
-        <div class="pick-desc">16 blocks of dining, nightlife, and Victorian architecture in the heart of downtown</div>
+        <div class="pick-item-name">Gaslamp Quarter</div>
+        <div class="pick-item-desc">16 blocks of dining, nightlife, and Victorian architecture in the heart of downtown</div>
       </div>
       <span class="pick-badge badge-free">Free</span>
     </a>
     <a href="arts-culture-san-diego.html" class="pick-item">
-      <div class="pick-num">07</div>
+      <div class="pick-item-num">07</div>
       <div>
-        <div class="pick-name">Old Town San Diego</div>
-        <div class="pick-desc">California's birthplace — authentic Mexican food, mariachi, and living history</div>
+        <div class="pick-item-name">Old Town San Diego</div>
+        <div class="pick-item-desc">California's birthplace — authentic Mexican food, mariachi, and living history</div>
       </div>
       <span class="pick-badge badge-family">Family</span>
     </a>
     <a href="family-fun-san-diego.html" class="pick-item">
-      <div class="pick-num">08</div>
+      <div class="pick-item-num">08</div>
       <div>
-        <div class="pick-name">Mission Beach Boardwalk</div>
-        <div class="pick-desc">Rent a bike, grab fish tacos, and ride the classic Giant Dipper roller coaster</div>
+        <div class="pick-item-name">Mission Beach Boardwalk</div>
+        <div class="pick-item-desc">Rent a bike, grab fish tacos, and ride the classic Giant Dipper roller coaster</div>
       </div>
       <span class="pick-badge badge-family">Family</span>
     </a>
     <a href="little-italy-san-diego.html" class="pick-item">
-      <div class="pick-num">09</div>
+      <div class="pick-item-num">09</div>
       <div>
-        <div class="pick-name">Little Italy Farmers Market</div>
-        <div class="pick-desc">San Diego's best Saturday morning tradition — local produce, food stalls, live music</div>
+        <div class="pick-item-name">Little Italy Farmers Market</div>
+        <div class="pick-item-desc">San Diego's best Saturday morning tradition — local produce, food stalls, live music</div>
       </div>
       <span class="pick-badge badge-free">Free</span>
     </a>
     <a href="best-beaches-san-diego.html#sunset-cliffs" class="pick-item">
-      <div class="pick-num">10</div>
+      <div class="pick-item-num">10</div>
       <div>
-        <div class="pick-name">Sunset Cliffs Natural Park</div>
-        <div class="pick-desc">Watch the sun drop into the Pacific from the most dramatic cliffs in the city</div>
+        <div class="pick-item-name">Sunset Cliffs Natural Park</div>
+        <div class="pick-item-desc">Watch the sun drop into the Pacific from the most dramatic cliffs in the city</div>
       </div>
       <span class="pick-badge badge-free">Free</span>
     </a>
@@ -1115,15 +1115,15 @@
 </section>
 
 <!-- NEWSLETTER -->
-<section class="newsletter" id="newsletter">
+<section class="email-band" id="newsletter">
   <div>
-    <div class="nl-title">Never miss a thing<br>to do in San Diego.</div>
-    <div class="nl-sub">Weekly picks, hidden gems, seasonal events, and local tips — straight to your inbox. No spam, ever.</div>
+    <div class="band-title">Never miss a thing<br>to do in San Diego.</div>
+    <div class="band-sub">Weekly picks, hidden gems, seasonal events, and local tips — straight to your inbox. No spam, ever.</div>
   </div>
   <div>
-    <div class="nl-form">
-      <input type="email" class="nl-input" placeholder="your@email.com">
-      <button class="nl-btn">Subscribe</button>
+    <div class="band-form">
+      <input type="email" class="band-input" placeholder="your@email.com">
+      <button class="band-btn">Subscribe</button>
     </div>
   </div>
 </section>
@@ -1165,7 +1165,7 @@
       </ul>
     </div>
   </div>
-  <div class="footer-bottom">
+  <div class="footer-bar">
     <span>© 2025 SanDiegoTodo.com — America's Finest City Guide</span>
     <span>Made with ☀️ in San Diego</span>
   </div>
